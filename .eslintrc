@@ -38,10 +38,7 @@
         ]
       }
     ],
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
+    "linebreak-style": 0,
     "import/no-extraneous-dependencies": "off",
     "no-use-before-define": "off",
     "promise/param-names": 2,

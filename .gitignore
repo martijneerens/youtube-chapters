@@ -5,3 +5,4 @@ node_modules
 style.min.css
 scripts.min.js
 .idea
+yarn.lock

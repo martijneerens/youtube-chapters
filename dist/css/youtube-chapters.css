@@ -1,12 +1,3 @@
-/*!
- * youtube-chapters
- * A YouTube chapter generator
- * https://github.com/VD39/youtube-chapters
- * @author Vijay Dubb
- * @version 3.1.0
- * Copyright 2013. MIT licensed.
- */
-
 /*---- Reset all styles ----*/
 * {
   margin: 0;
@@ -48,8 +39,7 @@ video {
       z-index: 999;
       width: 150px;
       border: solid 10px #ffffff;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%); }
     .loading .loading-wrapper:after {
       content: '';
       position: absolute;
@@ -59,38 +49,22 @@ video {
       height: 15px;
       z-index: 999;
       background: royalblue;
-      -webkit-animation-name: loading-youtube-video;
-              animation-name: loading-youtube-video;
-      -webkit-animation-duration: .5s;
-              animation-duration: .5s;
-      -webkit-animation-direction: alternate;
-              animation-direction: alternate;
-      -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite; }
+      animation-name: loading-youtube-video;
+      animation-duration: .5s;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
     .loading .loading-wrapper .loading-text {
       position: absolute;
       top: 70%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-
-@-webkit-keyframes loading-youtube-video {
-  0% {
-    -webkit-transform: translate(-72.5px, -7.5px);
-            transform: translate(-72.5px, -7.5px); }
-  100% {
-    -webkit-transform: translate(58.5px, -7.5px);
-            transform: translate(58.5px, -7.5px); } }
+      transform: translate(-50%, -50%); }
 
 @keyframes loading-youtube-video {
   0% {
-    -webkit-transform: translate(-72.5px, -7.5px);
-            transform: translate(-72.5px, -7.5px); }
+    transform: translate(-72.5px, -7.5px); }
   100% {
-    -webkit-transform: translate(58.5px, -7.5px);
-            transform: translate(58.5px, -7.5px); } }
+    transform: translate(58.5px, -7.5px); } }
 
 .youtube-chapter-wrapper {
   visibility: hidden;
@@ -98,18 +72,15 @@ video {
   margin: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   display: -ms-flexbox;
   display: flex; }
   .youtube-chapter-wrapper.complete {
     visibility: visible; }
   .youtube-chapter-wrapper .youtube-wrapper {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 70%;
-            flex: 3 1 70%; }
+    -ms-flex: 3 1 70%;
+        flex: 3 1 70%; }
     .youtube-chapter-wrapper .youtube-wrapper .fluid-wrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -124,9 +95,8 @@ video {
   .youtube-chapter-wrapper .chapters-wrapper {
     border: 1px solid #ccc;
     width: 350px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 30%;
-            flex: 1 1 30%;
+    -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
     overflow-x: overlay; }
     .youtube-chapter-wrapper .chapters-wrapper .chapter-point-wrapper {
       border-top: 1px solid #ccc;
@@ -152,9 +122,8 @@ video {
         position: absolute;
         right: 10px; }
   .youtube-chapter-wrapper .text-wrapper {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%;
+    -ms-flex: 1 100%;
+        flex: 1 100%;
     margin-top: 15px; }
     .youtube-chapter-wrapper .text-wrapper .text-point {
       display: none;

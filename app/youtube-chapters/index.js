@@ -322,6 +322,7 @@ export class YouTubeChapters {
         ._callPlayerReady();
     };
 
+
     /**
      * The method that runs while the YouTube video is being played.
      * @param {event} event
@@ -347,6 +348,7 @@ export class YouTubeChapters {
             next = parseFloat(current.next().attr('data-time'));
           } else {
             next = player.getDuration();
+            console.log(player.getCurrentTime());
           }
 
           current.removeClass('current');
