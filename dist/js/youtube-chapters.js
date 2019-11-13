@@ -449,6 +449,7 @@ var YouTubeChapters = exports.YouTubeChapters = function () {
               next = parseFloat(current.next().attr('data-time'));
             } else {
               next = player.getDuration();
+              console.log(player.getCurrentTime());
             }
 
             current.removeClass('current');
